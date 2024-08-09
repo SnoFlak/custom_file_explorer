@@ -28,101 +28,107 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.treeView1 = new System.Windows.Forms.TreeView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.button5 = new System.Windows.Forms.Button();
+            this.currentDirectoryTextBox = new System.Windows.Forms.TextBox();
+            this.treeDirs = new System.Windows.Forms.TreeView();
+            this.goToParentDirectoryBtn = new System.Windows.Forms.Button();
+            this.newFolderBtn = new System.Windows.Forms.Button();
+            this.newFileBtn = new System.Windows.Forms.Button();
+            this.folderViewer = new System.Windows.Forms.ListView();
+            this.quickDirs = new System.Windows.Forms.ListView();
+            this.refreshButton = new System.Windows.Forms.Button();
+            this.Drives = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.SpaceRemaining = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
-            // textBox1
+            // currentDirectoryTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(38, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(698, 20);
-            this.textBox1.TabIndex = 0;
+            this.currentDirectoryTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.currentDirectoryTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.currentDirectoryTextBox.Location = new System.Drawing.Point(38, 12);
+            this.currentDirectoryTextBox.Name = "currentDirectoryTextBox";
+            this.currentDirectoryTextBox.Size = new System.Drawing.Size(698, 20);
+            this.currentDirectoryTextBox.TabIndex = 0;
             // 
-            // treeView1
+            // treeDirs
             // 
-            this.treeView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.treeView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.treeView1.Location = new System.Drawing.Point(12, 150);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(179, 288);
-            this.treeView1.TabIndex = 1;
+            this.treeDirs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.treeDirs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.treeDirs.Location = new System.Drawing.Point(12, 150);
+            this.treeDirs.Name = "treeDirs";
+            this.treeDirs.Size = new System.Drawing.Size(184, 288);
+            this.treeDirs.TabIndex = 1;
             // 
-            // button1
+            // goToParentDirectoryBtn
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(20, 20);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "up";
-            this.button1.UseVisualStyleBackColor = true;
+            this.goToParentDirectoryBtn.Location = new System.Drawing.Point(12, 12);
+            this.goToParentDirectoryBtn.Name = "goToParentDirectoryBtn";
+            this.goToParentDirectoryBtn.Size = new System.Drawing.Size(20, 20);
+            this.goToParentDirectoryBtn.TabIndex = 2;
+            this.goToParentDirectoryBtn.Text = "up";
+            this.goToParentDirectoryBtn.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // newFolderBtn
             // 
-            this.button2.Location = new System.Drawing.Point(42, 8);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(0, 0);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.newFolderBtn.Location = new System.Drawing.Point(742, 12);
+            this.newFolderBtn.Name = "newFolderBtn";
+            this.newFolderBtn.Size = new System.Drawing.Size(20, 20);
+            this.newFolderBtn.TabIndex = 4;
+            this.newFolderBtn.Text = "New Folder";
+            this.newFolderBtn.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // newFileBtn
             // 
-            this.button3.Location = new System.Drawing.Point(742, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(20, 20);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "up";
-            this.button3.UseVisualStyleBackColor = true;
+            this.newFileBtn.Location = new System.Drawing.Point(768, 12);
+            this.newFileBtn.Name = "newFileBtn";
+            this.newFileBtn.Size = new System.Drawing.Size(20, 20);
+            this.newFileBtn.TabIndex = 5;
+            this.newFileBtn.Text = "New File";
+            this.newFileBtn.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // folderViewer
             // 
-            this.button4.Location = new System.Drawing.Point(768, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(20, 20);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "up";
-            this.button4.UseVisualStyleBackColor = true;
+            this.folderViewer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.folderViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.folderViewer.HideSelection = false;
+            this.folderViewer.Location = new System.Drawing.Point(202, 42);
+            this.folderViewer.Name = "folderViewer";
+            this.folderViewer.Size = new System.Drawing.Size(586, 396);
+            this.folderViewer.TabIndex = 8;
+            this.folderViewer.UseCompatibleStateImageBehavior = false;
             // 
-            // listView1
+            // quickDirs
             // 
-            this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(198, 42);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(590, 396);
-            this.listView1.TabIndex = 8;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.quickDirs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.quickDirs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.quickDirs.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Drives,
+            this.SpaceRemaining});
+            this.quickDirs.Cursor = System.Windows.Forms.Cursors.Default;
+            this.quickDirs.HideSelection = false;
+            this.quickDirs.Location = new System.Drawing.Point(12, 42);
+            this.quickDirs.Name = "quickDirs";
+            this.quickDirs.Size = new System.Drawing.Size(184, 102);
+            this.quickDirs.TabIndex = 9;
+            this.quickDirs.UseCompatibleStateImageBehavior = false;
+            this.quickDirs.SelectedIndexChanged += new System.EventHandler(this.quickDirs_SelectedIndexChanged);
             // 
-            // listView2
+            // refreshButton
             // 
-            this.listView2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.listView2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(12, 42);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(179, 102);
-            this.listView2.TabIndex = 9;
-            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.refreshButton.Location = new System.Drawing.Point(716, 12);
+            this.refreshButton.Name = "refreshButton";
+            this.refreshButton.Size = new System.Drawing.Size(20, 20);
+            this.refreshButton.TabIndex = 10;
+            this.refreshButton.Text = "refresh";
+            this.refreshButton.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // Drives
             // 
-            this.button5.Location = new System.Drawing.Point(716, 12);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(20, 20);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "up";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Drives.Text = "Drives";
+            // 
+            // SpaceRemaining
+            // 
+            this.SpaceRemaining.Text = "Space Remaining";
+            this.SpaceRemaining.Width = 124;
             // 
             // Form1
             // 
@@ -130,15 +136,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.listView2);
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.treeView1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.refreshButton);
+            this.Controls.Add(this.quickDirs);
+            this.Controls.Add(this.folderViewer);
+            this.Controls.Add(this.newFileBtn);
+            this.Controls.Add(this.newFolderBtn);
+            this.Controls.Add(this.goToParentDirectoryBtn);
+            this.Controls.Add(this.treeDirs);
+            this.Controls.Add(this.currentDirectoryTextBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
@@ -150,15 +156,16 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox currentDirectoryTextBox;
+        private System.Windows.Forms.TreeView treeDirs;
+        private System.Windows.Forms.Button goToParentDirectoryBtn;
+        private System.Windows.Forms.Button newFolderBtn;
+        private System.Windows.Forms.Button newFileBtn;
+        private System.Windows.Forms.ListView folderViewer;
+        private System.Windows.Forms.ListView quickDirs;
+        private System.Windows.Forms.Button refreshButton;
+        private System.Windows.Forms.ColumnHeader Drives;
+        private System.Windows.Forms.ColumnHeader SpaceRemaining;
     }
 }
 
